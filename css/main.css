@@ -1,10 +1,12 @@
 #main-cont {
+    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr / 1fr 2fr 1fr;
     border:rgb(163, 163, 163) solid 3px;
     max-width: 1000px;
+    max-height: 600px;
     padding: 50px;
     align-items: center;
 }
@@ -14,8 +16,10 @@
     color: white;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    text-align: center;
-    height: 50%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #skill-list {
     color:rgba(247, 158, 75, 0.8);
@@ -25,7 +29,6 @@
 li::marker {
     content: "X";
     color: rgb(235, 94, 94);
-    margin-left: 0;
 }
 #inputs {
     grid-row: 4 / 5;
